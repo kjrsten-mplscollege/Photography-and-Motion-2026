@@ -1,11 +1,14 @@
+main {
+  max-width: 1300px;
+  margin: auto;
+  text-align: center;
+}
+
 .Logo {
   display: flex;
   justify-content: center; 
   align-items: center;   
   height: 100px;           
-}
-
-.Logo {
   max-width: 100%;         
   height: auto;
 }
@@ -31,7 +34,10 @@
 }
 
 .card__img {
-  width: 250px;
+  width: 100%;
+  max-width: 250px;
+  height: 400px;
+  object-fit: cover;
   border-radius: 1.5rem;
 }
 
