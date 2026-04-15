@@ -79,3 +79,36 @@
   color: white;
   background-color: #3c2473;
 }
+
+footer {
+
+
+
+  text-align: center; 
+  width: 100%; }
+
+  footer {
+
+color: rgb(0, 0, 0);
+
+  }
+
+  .links {
+  color: #000000;
+}
+
+.staff {
+
+text-align: center; 
+  width: 100%; }
+
+
+  .teacher-list {
+
+  text-align: center; 
+  width: 100%; }
+
+  ul {
+  list-style-type: none;
+}
+
