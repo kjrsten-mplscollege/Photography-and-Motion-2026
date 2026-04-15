@@ -52,11 +52,11 @@
         <div class="container">
             <div class="card__container">
                 <article class="card__article">
-                    <img src="./images/abdul.jpg" alt="image" class="card__img">
+                    <img src="./images/abdul.jpg" alt="image" class="lightbox-trigger card__img">
 
                     <div class="card__data">
                         <h2 class="card__title">Abdul Wadud</h2>
-                        <a href="www.gritandgracevisuals.com" class="card__button" target="_blank">Visit Artists Site</a>
+                        <a href="https://www.gritandgracevisuals.com" class="card__button" target="_blank">Visit Artists Site</a>
                     </div>
                 </article>
             
@@ -64,7 +64,7 @@
 
         <!-- angelo -->
                 <article class="card__article">
-                    <img src="./images/angelo.jpg" alt="image" class="card__img">
+                    <img src="./images/angelo.jpg" alt="image" class="lightbox-trigger card__img">
 
                     <div class="card__data">
                         <h2 class="card__title">Angelo Bush</h2>
@@ -76,7 +76,7 @@
 
         <!-- Jane -->
                 <article class="card__article">
-                    <img src="./images/jane.jpg" alt="image" class="card__img">
+                    <img src="./images/jane.jpg" alt="image" class="lightbox-trigger card__img">
 
                     <div class="card__data">
                         <h2 class="card__title">Jane Pupeza </h2>
@@ -88,7 +88,7 @@
 
         <!-- summer -->
                 <article class="card__article">
-                    <img src="./images/summer.jpg" alt="image" class="card__img">
+                    <img src="./images/summer.jpg" alt="image" class="lightbox-trigger card__img">
 
                     <div class="card__data">
                         <h2 class="card__title">Summer Smith</h2>
@@ -101,11 +101,11 @@
 
         <!-- woods -->
                 <article class="card__article">
-                    <img src="./images/woods.jpg" alt="image" class="card__img">
+                    <img src="./images/woods.jpg" alt="image" class="lightbox-trigger card__img">
 
                     <div class="card__data">
                         <h2 class="card__title">Talaya Woods</h2>
-                        <a href="www.talayawoods.com" class="card__button" target="_blank">Visit Artists Site</a>
+                        <a href="https://www.talayawoods.com" class="card__button" target="_blank">Visit Artists Site</a>
                     </div>
                 </article>
             </div>
@@ -210,5 +210,38 @@
 </footer>
 <!-- FOOTER ENDS -->
 
+
+
+
+<div class="lightbox" id="lightbox">
+  <span class="lightbox__close" id="lightboxClose">&times;</span>
+  <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const lightbox = document.getElementById("lightbox");
+      const lightboxImg = document.getElementById("lightboxImg");
+      const closeBtn = document.getElementById("lightboxClose");
+    
+      const images = document.querySelectorAll(".lightbox-trigger");
+    
+      images.forEach(img => {
+        img.addEventListener("click", () => {
+          lightbox.classList.add("active");
+          lightboxImg.src = img.src;
+        });
+      });
+    
+      closeBtn.addEventListener("click", () => {
+        lightbox.classList.remove("active");
+      });
+    
+      lightbox.addEventListener("click", (e) => {
+        if (e.target !== lightboxImg) {
+          lightbox.classList.remove("active");
+        }
+      });
+    });
+    </script>
+</div>
 </body>
 </html>
