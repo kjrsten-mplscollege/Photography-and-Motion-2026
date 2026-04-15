@@ -112,3 +112,19 @@ text-align: center;
   list-style-type: none;
 }
 
+.teach-link {
+  text-decoration: none;       
+
+}
+
+
+.teach-link a {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.teach-link a:hover {
+  background-color: #000000;
+  color: #fff;
+}
