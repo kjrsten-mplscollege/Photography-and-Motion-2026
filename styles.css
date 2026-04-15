@@ -207,5 +207,62 @@ main {
   right: 30px;
   font-size: 40px;
   color: white;
+  background-color: #3c2473;
+}
+
+footer {
+
+
+
+  text-align: center; 
+  width: 100%; }
+
+  footer {
+
+color: rgb(0, 0, 0);
+
+  }
+
+  .links {
+  color: #000000;
+
+}
+
+  .links {
+  text-decoration: none; 
+}
+
+
+.staff {
+
+text-align: center; 
+  width: 100%; }
+
+
+  .teacher-list {
+
+  text-align: center; 
+  width: 100%; }
+
+  ul {
+  list-style-type: none;
+}
+
+
+.teach-link {
+  text-decoration: none;       
+
+}
+
+
+.teach-link a {
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+}
+
+.teach-link a:hover {
+  background-color: #000000;
+  color: #fff;
   cursor: pointer;
 }
