@@ -95,7 +95,13 @@ color: rgb(0, 0, 0);
 
   .links {
   color: #000000;
+
 }
+
+  .links {
+  text-decoration: none; 
+}
+
 
 .staff {
 
@@ -111,6 +117,7 @@ text-align: center;
   ul {
   list-style-type: none;
 }
+
 
 .teach-link {
   text-decoration: none;       
