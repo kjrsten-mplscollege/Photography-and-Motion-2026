@@ -4,16 +4,29 @@ html{
   background-color: #f8f5ec;
 }
 
+body{
+  margin: 0;
+}
 
 main {
   max-width: 1300px;
   margin: auto;
 }
 
+.banner {
+  height: 10vh;
+  background-color: #3c2473;
+  
+}
+
 .Logo {
   margin: 60px auto;
   text-align: center;                 
   height: auto;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1, h2 {
@@ -183,6 +196,14 @@ h1, h2 {
   border: #3c2473 solid 3px;
   border-radius: 1.5rem;
   padding: 12px;
+}
+
+.thanks__container{
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .thanks {
