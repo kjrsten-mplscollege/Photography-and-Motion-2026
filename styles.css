@@ -409,3 +409,80 @@ footer h2 {
     width: 316px;
   }
 }
+
+h1 {
+
+font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+
+}
+
+h2 {
+
+font-family: "Sekuya", system-ui;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+
+}
+
+
+.card__title {
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-size: 20px;
+
+}
+
+.card__button {
+
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 15px;
+
+
+}
+
+
+p, h3, a, .teacher-list {
+
+font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-size: 20px;
+
+}
+
+
+.btn-links {
+
+background-color: #e0e0e0;
+  border-radius: 50px;
+  box-shadow: inset 4px 4px 10px #bcbcbc, inset -4px -4px 10px #ffffff;
+  color: #4d4d4d;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 5px 5px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid rgb(206, 206, 206);
+
+}
+
+.btn-links:hover {
+
+box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+
+}
+
+.btn-links:focus {
+
+  outline: none;
+  box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+
+
+}
