@@ -1,13 +1,13 @@
 html{
   text-align: center;
   margin: 0 auto;
+  background-color: #f8f5ec;
 }
 
 
 main {
   max-width: 1300px;
   margin: auto;
-  text-align: center;
 }
 
 .Logo {
@@ -16,22 +16,35 @@ main {
   height: auto;
 }
 
+h1, h2 {
+  color: #3c2473;
+  font-weight: 700;
+}
+
+.h1__grad {
+  font-size: 50px;
+  font-weight: 900;
+  color: #3c2473;
+  border-bottom: #3c2473 solid 5px;
+  width: fit-content;
+  margin: auto;
+  padding-bottom: 12px;
+}
+
 .img__logo {
-  border: solid #3c2473 3px;
+  border: solid #3c2473 5px;
   border-radius: 1.5rem;
-  padding: 12px;
+  padding: 24px;
 }
 
 .graduates{
   font-size: 50px;
-  width: 100%;
-  max-width: 351px;
   height: 400px;
-  display: flex;
+  display: grid;
   align-items: center;
   color: white;
-  background-color: #3c2473;
   border-radius: 1.5rem;
+  background-image: url(./images/cameraBackground.jpg);
 }
 
 /* card */
@@ -42,7 +55,7 @@ main {
   padding-block: 5rem;
 }
 
-.card__container, .graduates {
+.card__container {
   display: grid;
   row-gap: 3.5rem;
 }
@@ -53,7 +66,7 @@ main {
   overflow: hidden;
 }
 
-.card__img {
+.card__img, .graduates {
   width: 100%;
   max-width: 400px;
   height: 400px;
@@ -149,6 +162,29 @@ main {
   background-color: #3c2473;
 }
 
+
+.reception__container{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.dates, .location{
+  padding: 12px;
+  margin: 12px;
+}
+
+.parking{
+  display: flex;
+  width: 910px;
+  margin: auto;
+  margin-top: 12px;
+  margin-bottom: 24px;
+  border: #3c2473 solid 3px;
+  border-radius: 1.5rem;
+  padding: 12px;
+}
+
 .thanks {
   text-align: center;
 }
@@ -238,8 +274,26 @@ footer {
   background-color: #3c2473;
   position: absolute;
   color: white;
-  align-items: center; 
+  text-align: center; 
   width: 100%; 
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 16px;
+  margin-bottom: 16px;
+
+}
+
+.social__container{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 footer a{
@@ -247,6 +301,16 @@ footer a{
   padding: 0 4px;
   font-weight: 600;
   text-decoration: none;
+  font-size: 18px;
+}
+
+footer h2 {
+  width: fit-content;
+}
+
+.i__container {
+  display: flex;
+  justify-content: flex-end;
 }
 
 @keyframes show-data{
