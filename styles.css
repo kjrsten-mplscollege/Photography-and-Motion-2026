@@ -441,7 +441,7 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
   }
 }
 
-@media (max-width: 400px)  {
+@media (min-width: 300px)  {
   
   
   .container {
@@ -572,7 +572,7 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
   }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1120px) {
 
   .card__data {
     position: static;
