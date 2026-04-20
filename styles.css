@@ -218,7 +218,7 @@ strong {
 }
 
 .parking {
-  width: 640px;
+  width: 900px;
 }
 
 .parking p {
@@ -257,7 +257,7 @@ strong {
 
 .thanks p {
   font-weight: 500;
-  width: 470px;
+  width: 670px;
   padding: 8px;
   margin: 24px auto;
   margin-top: 8px;
@@ -560,7 +560,8 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;align-items: center;
+    justify-content: center;
+    align-items: center;
   }  
 
   #teachers a:hover {
@@ -618,6 +619,10 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
   .reception__container {
     width: 1000px;
     margin: auto;
+  }
+
+  .parking {
+    width: 800px;
   }
 
   .parking p {
