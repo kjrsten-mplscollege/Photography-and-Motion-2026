@@ -14,9 +14,20 @@ main {
 }
 
 .banner {
-  height: 10vh;
+  height: 8vh;
   background-color: #3c2473;
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner h3 {
+  font-family: "Sekuya", system-ui;
+  color: white;
+  border: white solid 4px;
+  border-radius: 1.5rem;
+  padding: 6px 12px;
+  width: 400px;
 }
 
 .Logo {
@@ -191,7 +202,7 @@ h1, h2 {
 }
 
 .parking{
-  display: flex;
+  text-align: center;
   width: 1100px;
   margin: auto;
   margin-top: 12px;
@@ -206,17 +217,26 @@ strong {
   color: #3c2473;
 }
 
-.parking p {
-  font-size: 25px;
-  margin-left: 2px;
+.parking {
+  width: 640px;
 }
 
-.thanks__container{
-  height: 45vh;
-  max-width: 900px;
-  margin: auto;
-  margin-top: 16px;
-  margin-bottom: 16px;
+.parking p {
+  font-size: 30px;
+}
+
+.times-dates {
+  text-align: center;
+  width: 320px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.thanks__container {
+  height: 475px;
+  width: 1100px;
+  margin: 32px auto;
   border: #3c2473 solid 4px;
   border-radius: 1.5rem;
   display: flex;
@@ -239,12 +259,10 @@ strong {
   font-weight: 500;
   width: 470px;
   padding: 8px;
-  margin-bottom: 10px;
-  margin: auto;
+  margin: 24px auto;
   margin-top: 8px;
   font-size: 28px;
 }
-
 
 #teachers{
   display: flex;
@@ -266,8 +284,10 @@ li {
   color: black;
 }
 
+
+
 .teach__containers a:hover {
-  border: solid black 2px;
+  border: solid #3c2473 2px;
   border-radius: 1.5rem;
   background-color: #3c2473;
   color: white;
@@ -402,6 +422,14 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
 
 
 }
+.map-full {
+
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
 
 @keyframes show-data{
   50% {
@@ -442,9 +470,11 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
   }
 }
 
-@media (min-width: 300px)  {
+@media screen and (max-width: 766px)  {
   
-  
+  .banner h3 {
+    width: 320px;
+  }
   .container {
     margin-inline: 1rem;
     padding-bottom: 25px;
@@ -459,17 +489,23 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
   }
 
   .Logo {
-    height: 40vh;
+    height: 60vh;
   }
 
   .h1__grad {
     font-size: 27px;
-    width: 320px;
+    width: 350px;
   }
 
   .reception__container {
     width: 350px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dates {
+    margin-bottom: 32px;
   }
 
   .parking {
@@ -500,23 +536,24 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     width: 300px;
     height: 600px;
     display: flex;
-    justify-content: center;align-items: center;
+    justify-content: center;
+    align-items: center;
   }
 
   .teacher__container a {
     margin: 0;
-    width: fit-content;
     padding: 4px;
+    color: white;
   }
 
   .teacher-list {
-    color: white;
     background-color: #3c2473;
     border-radius: 1.5rem;
-    padding: 8px 16px;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    width: 172px;
   }
-
-
 
   #teachers {
     width: 350px;
@@ -532,17 +569,20 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
   }
 
   .footer__container {
-    width: 350px;
+    width: 360px;
     align-items: start;
   }
 
-  .past__shows{
-    width: 200px;
+  .btn-links{
+    margin: 0 8px 8px 0;
+
   }
 
-  .btn-links{
-    margin: 8px 4px;
-
+  .btn__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 250px;
   }
 
   .btn__container a {
@@ -550,10 +590,8 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     display: flex;
   }
 
-  .social__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .social__container h2{
+    font-size: 18px;
   }
 
   #copyright{
@@ -566,14 +604,79 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
 
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1119px) {
+  
+  .img__logo {
+    width: 400px;
+  }
+  
   .card__container{
     grid-template-columns: repeat(2, 1fr);
     column-gap: 1.5rem ;
   }
+
+  .reception__container {
+    width: 1000px;
+    margin: auto;
+  }
+
+  .parking p {
+    font-size: 20px;
+  }
+
+  .thanks__container {
+    width: 740px;
+  }
+
+  #teachers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 675px;
+    justify-content: center;
+  }
+
+  .teacher__container a {
+    margin: 0;
+    padding: 4px;
+    color: white;
+  }
+
+  .teacher-list {
+    background-color: #3c2473;
+    border-radius: 1.5rem;
+    margin: 4px;
+    display: flex;
+    justify-content: center;
+    width: 172px;
+    color: white;
+  }
+
+  .footer__container{
+    width: 800px;
+    align-items: flex-start;
+  }
+  .btn-links{
+    margin: 0 8px 8px 0;
+  }
+
+  .btn__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 300px;
+  }
+
+  .btn__container a {
+    font-size: 16px;
+    display: flex;
+  }
+
+  .social__container h2{
+    font-size: 18px;
+  }
 }
 
-@media (max-width: 1120px) {
+@media (max-width: 1119px) {
 
   .card__data {
     position: static;
@@ -600,13 +703,4 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
   .card__data {
     width: 316px;
   }
-}
-
-.map-full {
-
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
-
 }
