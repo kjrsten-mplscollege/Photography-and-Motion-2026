@@ -511,8 +511,9 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     flex-direction: column;
   }
 
-  .dates {
+  .dates, .location {
     margin-bottom: 32px;
+    margin: auto;
   }
 
   .parking {
@@ -521,8 +522,7 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
   }
 
   .parking p {
-    font-size: 18px;
-    padding-left: 8px;
+    font-size: 20px;
   }
 
   .thanks__container {
@@ -578,9 +578,16 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     border: transparent;
   }
 
+  footer{
+    height: 400px;
+  }
+
   .footer__container {
     width: auto;
     margin: 0px 20px;
+    height: 220px;
+    display: flex;
+    align-items: flex-start;
   }
 
   .btn-links{
@@ -607,8 +614,6 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     width: auto;
     margin: auto;
     font-size: 15px;
-    margin-top: 12px;
-    margin-bottom: 12px;
   }
 
 }
@@ -668,6 +673,11 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     width: 800px;
     align-items: flex-start;
   }
+
+  .past__shows {
+    width: 400px;
+  }
+
   .btn-links{
     margin: 0 8px 8px 0;
   }
@@ -676,7 +686,7 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    width: 300px;
+    width: 100%;
   }
 
   .btn__container a {
