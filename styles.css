@@ -584,8 +584,7 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
 
   .footer__container {
     width: auto;
-    margin: 0px 20px;
-    height: 220px;
+    margin: 0px 20px 40px;
     display: flex;
     align-items: flex-start;
   }
