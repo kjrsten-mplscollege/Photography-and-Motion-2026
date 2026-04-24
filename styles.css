@@ -315,7 +315,7 @@ footer {
   width: fit-content;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  justify-content: end;
 }
 
 footer a{
@@ -726,3 +726,6 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     width: 316px;
   }
 }
+
+
+
