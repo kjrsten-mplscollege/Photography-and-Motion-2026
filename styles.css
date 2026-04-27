@@ -315,6 +315,7 @@ strong {
 #teachers li {
   list-style: none;
   padding: 10px;
+  text-align: center;
 }
 
 #teachers a {
@@ -353,10 +354,7 @@ footer {
 }
 
 .social__container{
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+  top: 30px;
 }
 
 footer a{
@@ -544,8 +542,18 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     font-size: 1.2rem;
   }
 
- 
+ header {
+  text-align: center;
+}
+header h1 {
+  margin-left: 0;
+  padding: 10px;
+  font-size: 1.75rem;
+}
 
+  .card__data {
+    margin-top: -20px;
+  }
   .h1__grad {
     font-size: 27px;
     padding: 0 10px;
@@ -579,10 +587,8 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
   }
 
   .thanks h2 {
-    width: 150px;
-    font-size: 28px;
-    margin-top: 14px;
     text-align: center;
+    font-size: 1.5rem;
   }
 
   .thanks p {
@@ -618,16 +624,17 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 0;
   }  
 
-  #teachers a:hover {
+  /* #teachers a:hover {
     background-color: transparent;
     border: transparent;
-  }
+  } */
 
-  footer{
+  /* footer{
     height: 400px;
-  }
+  } */
 
   .footer__container {
     width: auto;
@@ -635,6 +642,11 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     display: flex;
     align-items: flex-start;
   }
+
+.social__container {
+  top: 20px;
+  position: relative;
+}
 
   .btn-links{
     margin: 0 8px 8px 0;
@@ -656,11 +668,11 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     font-size: 18px;
   }
 
-  #copyright{
+  /* #copyright{
     width: auto;
     margin: auto;
     font-size: 15px;
-  }
+  } */
 
 }
 
@@ -755,7 +767,6 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
     position: static;
     opacity: 1;
     transform: none;
-    margin-top: 10px;
   }
 
   .card__article {
