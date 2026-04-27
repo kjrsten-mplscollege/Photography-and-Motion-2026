@@ -8,36 +8,58 @@ main {
   margin: 0 auto;
 }
 
-.site-header {
+header {
+  background-color: #3c2473;
+}
+
+header h1 {
+  color: white;
+  display: inline-block;
+  margin-left: 4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  bottom: 20px;
+  position: relative;
+}
+
+/* .site-header {
   background-color: #3c2473;
   padding: 10px 20px 10px 40px;
   position: sticky;
   top: 0;
   z-index: 100;
-}
+} */
 
-.Logo {
+/* .Logo {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+} */
+
+.logo {
+  display: inline-block;
 }
 
 .img__logo {
+  padding: 20px;
+  width: 160px;
+}
+/* .img__logo {
   border: solid white 3px;
   border-radius: 0.75rem;
   padding: 8px;
   height: auto;
   width: 160px;
-}
+} */
 
-.logo {
+/* .logo {
   display: flex;
   flex-direction: column;
   line-height: 1;
   font-family: sans-serif;
-}
+} */
 
-.logo .college-name {
+/* .logo .college-name {
   font-size: 0.65rem;
   font-weight: 400;
   letter-spacing: 0.05em;
@@ -64,7 +86,7 @@ main {
   height: 3px;
   background-color: #4caf50;
   margin-top: 4px;
-}
+} */
 
 h1, h2 {
   color: #3c2473;
@@ -86,18 +108,20 @@ h1, h2 {
 .container {
   place-items: center;
   margin-inline: 1.5rem;
-  padding-block: 5rem;
+  padding-block: 1rem;
 }
 
 .card__container {
   display: grid;
-  row-gap: 3.5rem;
+  row-gap: 2rem;
 }
 
 .card__article {
-  margin: 0 25px;
+  /* margin: 0 25px; */
+  margin: 0;
   position: relative;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .card__img, .graduates {
@@ -107,7 +131,10 @@ h1, h2 {
   object-fit: cover;
   border-radius: 1.5rem;
 }
-
+.lightbox-trigger.card__img.class_photo {
+  object-fit: contain;
+  background-color: #3c2473;
+}
 .card__data {
   max-width: 150px;
   background-color: white;
@@ -228,23 +255,26 @@ strong {
   color: #3c2473;
 }
 
-
-
-.parking p {
-  font-size: 1.5rem;
+.parking h3 {
+  font-weight: bold;
 }
 
-.times-dates {
+.parking p {
+  font-size: 1.25rem;
+}
+
+/* .times-dates {
   text-align: center;
   display: flex;
   justify-content: center;
   font-size: 1.5rem;
-}
+} */
 
 
 .thanks__container {
-  height: 475px;
-  width: 1100px;
+  height: 325px;
+  width: 80%;
+  max-width: 1100px;
   margin: 32px auto;
   border: #3c2473 solid 4px;
   border-radius: 1.5rem;
@@ -252,9 +282,10 @@ strong {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 10px;
 }
 
-.thanks h2 {
+/* .thanks h2 {
   font-weight: 900;
   padding: 2px;
   margin: 24px 12px 0;
@@ -262,7 +293,7 @@ strong {
   margin: auto;
   width: fit-content;
   font-size: 30px;
-}
+} */
 
 .thanks p {
   font-weight: 500;
@@ -275,31 +306,31 @@ strong {
 
 #teachers{
   display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#teachers li {
+  list-style: none;
   padding: 10px;
 }
 
-li {
-  list-style: none;
-}
-
-.teacher__container {
-  align-items: center;
-}
-
-.teach__containers a{
-  border: solid transparent 2px;
-  padding: 16px;
-  text-decoration: none;
-  color: black;
-}
-
-
-
-.teach__containers a:hover {
+#teachers a {
   border: solid #3c2473 2px;
   border-radius: 1.5rem;
   background-color: #3c2473;
+  padding: 5px 20px;
+  text-decoration: none;
   color: white;
+}
+
+#teachers a:hover {
+  border: solid #3c2473 2px;
+  border-radius: 1.5rem;
+  background-color: white;
+  color:#3c2473;
 }
 
 footer {
@@ -314,7 +345,7 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: auto;
   margin-top: 16px;
   margin-bottom: 16px;
@@ -340,6 +371,7 @@ footer a{
 footer h2 {
   width: fit-content;
   color: white;
+  font-size: 1.5rem;
 }
 
 .location a {
@@ -365,7 +397,7 @@ h2 {
 font-family: "Sekuya", system-ui;
   font-weight: 300;
   font-style: normal;
-  font-size: 20px;
+  font-size: 2rem;
 
 }
 
@@ -392,18 +424,15 @@ font-family: "Sekuya", system-ui;
 
 
 p, h3, a {
-
-font-family: "Nunito", sans-serif;
+  font-family: "Nunito", sans-serif;
   font-optical-sizing: auto;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.5rem;
 }
 
 .teacher-list{
-  font-size: 22px;
+  font-size: 1.5rem;
   font-family: "Nunito", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
 }
 
 .btn__container a {
@@ -448,6 +477,7 @@ box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px 
 
 #copyright {
   font-size: 1rem;
+  margin-top: 50px;
 }
 
 @keyframes show-data{
