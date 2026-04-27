@@ -15,7 +15,7 @@ header {
 header h1 {
   color: white;
   display: inline-block;
-  margin-left: 4rem;
+  margin-left: 1rem;
   margin-top: 0;
   margin-bottom: 0;
   bottom: 20px;
@@ -241,7 +241,7 @@ h1, h2 {
 
 .parking{
   text-align: center;
-  width: 900px;
+  width: 80%;
   margin: auto;
   margin-top: 12px;
   margin-bottom: 24px;
@@ -272,7 +272,7 @@ strong {
 
 
 .thanks__container {
-  height: 325px;
+  /* height: 325px; */
   width: 80%;
   max-width: 1100px;
   margin: 32px auto;
@@ -283,6 +283,10 @@ strong {
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+.thanks {
+  padding: 20px;
 }
 
 /* .thanks h2 {
@@ -310,6 +314,7 @@ strong {
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
+  padding: 0;
 }
 
 #teachers li {
@@ -679,7 +684,7 @@ header h1 {
 @media screen and (min-width: 768px) and (max-width: 1119px) {
   
   .img__logo {
-    width: 400px;
+    width: 230px;
   }
 
   .logo .main-title {
@@ -692,12 +697,12 @@ header h1 {
   }
 
   .reception__container {
-    width: 1000px;
+    /* width: 1000px; */
     margin: auto;
   }
 
   .parking {
-    width: 800px;
+    /* width: 800px; */
   }
 
   .parking p {
@@ -705,13 +710,14 @@ header h1 {
   }
 
   .thanks__container {
-    width: 740px;
+    /* width: 740px; */
   }
 
   #teachers {
     display: flex;
     flex-wrap: wrap;
-    width: 675px;
+    /* width: 675px; */
+    padding-left: 0;
     justify-content: center;
   }
 
